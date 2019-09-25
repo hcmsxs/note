@@ -23,6 +23,7 @@ script:
   - git add .
   - git commit -m "Update docs"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  - git push --force --quiet "https:hcmsxs://${CO_TOKEN}@${CO_REF}" master:master
 
 
 # after_script:
@@ -37,3 +38,4 @@ branches:
 env:
   global:
     - GH_REF: github.com/hcmsxs/note.git
+    - CO_REF: git.dev.tencent.com/hcmsxs/note.git
